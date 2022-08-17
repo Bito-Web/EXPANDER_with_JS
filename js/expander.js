@@ -92,7 +92,7 @@ function toggleArrayItem(expanderTitle, expanderContent, toggleClass, dataAttr, 
 
 const parameters = {
     container: "expander",
-    urlData: "../json/data_expander.json",
+    urlData: "./json/data_expander.json",
     toggleClass: "open",
     dataAttr: "data-content",
     dataAttrValue_1: "\u{25BC}", 
