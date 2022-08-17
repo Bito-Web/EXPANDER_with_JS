@@ -28,7 +28,7 @@ async function buildExpanderHTML(container, urlData, toggleClass, dataAttr, data
     const url = await fetch(urlData);
     const data = await url.json();
 
-    data.forEach(item => {
+    data.expander.forEach(item => {
         if (item.title != '') {
             section.innerHTML += `
                 <article class="${container}__container">
@@ -92,7 +92,7 @@ function toggleArrayItem(expanderTitle, expanderContent, toggleClass, dataAttr, 
 
 const parameters = {
     container: "expander",
-    urlData: "../../json/data_expander.json",
+    urlData: "../json/data_expander.json",
     toggleClass: "open",
     dataAttr: "data-content",
     dataAttrValue_1: "\u{25BC}", 
